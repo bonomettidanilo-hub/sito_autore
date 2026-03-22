@@ -7,7 +7,7 @@ def home():
     return """
     <html>
     <head>
-        <title>Danilo Bonommetti - Thriller Author</title>
+        <title>Danilo Bonomettiauthor - Thriller</title>
         <style>
             body {
                 margin: 0;
@@ -105,5 +105,7 @@ def home():
     </html>
     """
 
+# ⚠️ QUESTA PARTE È LA CORREZIONE IMPORTANTE PER RENDER
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5050)
+    import os
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
