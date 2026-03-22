@@ -7,7 +7,7 @@ def home():
     return """
     <html>
     <head>
-        <title>Danilo Bonomettiauthor - Thriller</title>
+        <title>Danilo Bonommetti - Thriller</title>
         <style>
             body {
                 margin: 0;
@@ -85,14 +85,14 @@ def home():
             <div class="books">
 
                 <div class="book">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/71KilybDOoL._AC_UL600_SR600,600_.jpg">
+                    <img src="https://i.imgur.com/C8pXDwC.jpeg">
                     <h2>Quota 3000 – Scontro fra le rocce</h2>
                     <p>Un thriller ad alta tensione tra le montagne, dove ogni passo può essere l’ultimo.</p>
                     <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn">Acquista su Amazon</a>
                 </div>
 
                 <div class="book">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/71jQ8RkY5lL._AC_UL600_SR600,600_.jpg">
+                    <img src="https://i.imgur.com/LLk2xv1.jpeg">
                     <h2>L’ombra del predatore</h2>
                     <p>Il sequel ancora più oscuro, dove il pericolo non si vede… ma è sempre presente.</p>
                     <a href="https://amzn.eu/d/01ST1DQa" target="_blank" class="btn">Acquista su Amazon</a>
@@ -105,7 +105,6 @@ def home():
     </html>
     """
 
-# ⚠️ QUESTA PARTE È LA CORREZIONE IMPORTANTE PER RENDER
 if __name__ == "__main__":
     import os
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
