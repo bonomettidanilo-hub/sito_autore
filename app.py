@@ -21,7 +21,11 @@ def home():
                 padding:80px 20px;
             }
 
-            .book {
+            .books {
+                display:flex;
+                justify-content:center;
+                gap:40px;
+                flex-wrap:wrap;
                 margin-top:50px;
             }
 
@@ -49,13 +53,26 @@ def home():
             <h1>Thriller ad alta tensione tra montagne e missioni estreme</h1>
         </div>
 
-        <div class="book">
-            <!-- IMMAGINE CORRETTA -->
-            <img src="https://i.imgur.com/LLk2xv1.jpeg?v=5">
-            <h2>Quota 3000 – Scontro fra le rocce</h2>
-            <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn">
-                Acquista su Amazon
-            </a>
+        <div class="books">
+
+            <!-- QUOTA 3000 -->
+            <div class="book">
+                <img src="https://i.imgur.com/C8pXDwC.jpeg?v=7">
+                <h2>Quota 3000 – Scontro fra le rocce</h2>
+                <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn">
+                    Acquista su Amazon
+                </a>
+            </div>
+
+            <!-- OMBRA DEL PREDATORE -->
+            <div class="book">
+                <img src="https://i.imgur.com/LLk2xv1.jpeg?v=7">
+                <h2>L’ombra del predatore</h2>
+                <a href="https://amzn.eu/d/01ST1DQa" target="_blank" class="btn">
+                    Acquista su Amazon
+                </a>
+            </div>
+
         </div>
 
     </body>
