@@ -50,7 +50,8 @@ def home():
         </div>
 
         <div class="book">
-            <img src="https://i.imgur.com/C8pXDwC.jpeg?v=4">
+            <!-- IMMAGINE CORRETTA -->
+            <img src="https://i.imgur.com/LLk2xv1.jpeg?v=5">
             <h2>Quota 3000 – Scontro fra le rocce</h2>
             <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn">
                 Acquista su Amazon
