@@ -76,7 +76,10 @@ def home():
     <body>
 
         <div class="hero">
-            <h1>Thriller ad alta tensione tra montagne, pericolo e sopravvivenza</h1>
+            <h1>
+            Un uomo. Una montagna. Una missione che non doveva esistere.<br><br>
+            Quando la verità emerge, sopravvivere diventa impossibile.
+            </h1>
         </div>
 
         <div class="section">
@@ -84,15 +87,17 @@ def home():
 
             <div class="books">
 
+                <!-- QUOTA 3000 PRIMO -->
                 <div class="book">
-                    <img src="https://i.imgur.com/C8pXDwC.jpeg">
+                    <img src="https://i.imgur.com/LLk2xv1.jpeg">
                     <h2>Quota 3000 – Scontro fra le rocce</h2>
                     <p>Un thriller ad alta tensione tra le montagne, dove ogni passo può essere l’ultimo.</p>
                     <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn">Acquista su Amazon</a>
                 </div>
 
+                <!-- SEQUEL -->
                 <div class="book">
-                    <img src="https://i.imgur.com/LLk2xv1.jpeg">
+                    <img src="https://i.imgur.com/C8pXDwC.jpeg">
                     <h2>L’ombra del predatore</h2>
                     <p>Il sequel ancora più oscuro, dove il pericolo non si vede… ma è sempre presente.</p>
                     <a href="https://amzn.eu/d/01ST1DQa" target="_blank" class="btn">Acquista su Amazon</a>
