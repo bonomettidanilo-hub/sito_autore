@@ -18,7 +18,17 @@ def home():
             }
 
             .hero {
-                padding:80px 20px;
+                height:100vh;
+                background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+                url('https://i.imgur.com/E8RiFb6.jpeg');
+                background-size: cover;
+                background-position: center;
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                justify-content:center;
+                text-align:center;
+                padding:20px;
             }
 
             .highlight {
@@ -97,7 +107,7 @@ def home():
         <div class="books">
 
             <div class="book">
-                <img src="https://i.imgur.com/LLk2xv1.jpeg?v=11">
+                <img src="https://i.imgur.com/LLk2xv1.jpeg?v=13">
                 <h2>Quota 3000 – Scontro tra le rocce</h2>
                 <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn">
                     Acquista su Amazon
@@ -105,7 +115,7 @@ def home():
             </div>
 
             <div class="book">
-                <img src="https://i.imgur.com/C8pXDwC.jpeg?v=11">
+                <img src="https://i.imgur.com/C8pXDwC.jpeg?v=13">
                 <h2>L’ombra del predatore</h2>
                 <a href="https://amzn.eu/d/01ST1DQa" target="_blank" class="btn">
                     Acquista su Amazon
