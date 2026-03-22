@@ -18,7 +18,26 @@ def home():
             }
 
             .hero {
-                padding:100px 20px;
+                padding:80px 20px;
+            }
+
+            .book {
+                margin-top:50px;
+            }
+
+            .book img {
+                width:250px;
+                border-radius:10px;
+            }
+
+            .btn {
+                display:inline-block;
+                margin-top:15px;
+                padding:10px 20px;
+                background:red;
+                color:white;
+                text-decoration:none;
+                border-radius:5px;
             }
         </style>
     </head>
@@ -28,6 +47,14 @@ def home():
         <div class="hero">
             <h2>Danilo Bonometti</h2>
             <h1>Thriller ad alta tensione tra montagne e missioni estreme</h1>
+        </div>
+
+        <div class="book">
+            <img src="https://i.imgur.com/C8pXDwC.jpeg?v=4">
+            <h2>Quota 3000 – Scontro fra le rocce</h2>
+            <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn">
+                Acquista su Amazon
+            </a>
         </div>
 
     </body>
