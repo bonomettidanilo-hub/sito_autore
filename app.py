@@ -23,9 +23,18 @@ def home():
                 background-size: cover;
                 background-position: center;
                 display: flex;
+                flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+                padding: 20px;
+            }
+
+            .author-name {
+                font-size: 1.5em;
+                letter-spacing: 2px;
+                margin-bottom: 20px;
+                color: #ccc;
             }
 
             .hero h1 {
@@ -70,12 +79,21 @@ def home():
             .btn:hover {
                 background: darkred;
             }
+
+            .bio {
+                max-width: 800px;
+                margin: auto;
+                line-height: 1.6;
+                color: #ddd;
+            }
         </style>
     </head>
 
     <body>
 
         <div class="hero">
+            <div class="author-name">Danilo Bonommetti</div>
+
             <h1>
             Un uomo. Una montagna. Una missione che non doveva esistere.<br><br>
             Quando la verità emerge, sopravvivere diventa impossibile.
@@ -87,7 +105,6 @@ def home():
 
             <div class="books">
 
-                <!-- QUOTA 3000 (CORRETTO) -->
                 <div class="book">
                     <img src="https://i.imgur.com/C8pXDwC.jpeg">
                     <h2>Quota 3000 – Scontro fra le rocce</h2>
@@ -95,7 +112,6 @@ def home():
                     <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn">Acquista su Amazon</a>
                 </div>
 
-                <!-- L’OMBRA DEL PREDATORE (CORRETTO) -->
                 <div class="book">
                     <img src="https://i.imgur.com/LLk2xv1.jpeg">
                     <h2>L’ombra del predatore</h2>
@@ -103,6 +119,20 @@ def home():
                     <a href="https://amzn.eu/d/01ST1DQa" target="_blank" class="btn">Acquista su Amazon</a>
                 </div>
 
+            </div>
+        </div>
+
+        <div class="section">
+            <h1>Chi è Danilo Bonommetti</h1>
+            <div class="bio">
+                <p>
+                Danilo Bonommetti è autore di thriller ad alta tensione, ambientati tra montagne ostili, missioni segrete e situazioni estreme.
+                Nei suoi romanzi, la sopravvivenza non è mai garantita e ogni scelta può essere fatale.
+                </p>
+
+                <p>
+                Le sue storie combinano azione, suspense e ambientazioni realistiche, coinvolgendo il lettore in un’esperienza intensa e immersiva.
+                </p>
             </div>
         </div>
 
