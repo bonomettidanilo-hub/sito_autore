@@ -1,136 +1,109 @@
-from flask import Flask, render_template_string
+from flask import Flask
 
 app = Flask(__name__)
 
-html = """
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <title>Quota 3000 Thriller</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #0b0f19;
-            color: white;
-        }
-
-        .hero {
-            padding: 100px 20px;
-            text-align: center;
-            background: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') no-repeat center;
-            background-size: cover;
-        }
-
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            background-color: #dc2626;
-            padding: 15px 25px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-
-        .btn:hover {
-            background-color: #b91c1c;
-        }
-
-        .section {
-            padding: 50px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        .book {
-            margin-bottom: 60px;
-        }
-
-        .book h2 {
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-
-        .book p {
-            font-size: 16px;
-            margin-bottom: 15px;
-        }
-
-        blockquote {
-            font-style: italic;
-            font-size: 20px;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #020617;
-            margin-top: 40px;
-        }
-    </style>
-</head>
-
-<body>
-
-<div class="hero">
-    <h1>Un thriller ad alta tensione tra le montagne italiane</h1>
-    <p>Un’operazione militare fallita. Un uomo braccato. Sopravvivere è l’unica missione.</p>
-    <a class="btn" href="https://amzn.eu/d/0dI3x2wD" target="_blank">Inizia dal primo libro</a>
-</div>
-
-<div class="section">
-
-    <div class="book">
-        <h2>📘 Libro 1 — Quota 3000: Scontro fra le rocce</h2>
-        <p>
-        Un’operazione militare si trasforma in una trappola mortale.
-        Tra neve, roccia e silenzio, il nemico osserva e colpisce.
-        Non c’è via di fuga.
-        </p>
-        <a class="btn" href="https://amzn.eu/d/0dI3x2wD" target="_blank">Acquista ora</a>
-    </div>
-
-    <div class="book">
-        <h2>📕 Libro 2 — L’ombra del predatore</h2>
-        <p>
-        Il pericolo non è finito.
-        Qualcuno continua a cacciare nell’ombra.
-        E questa volta, nessuno è al sicuro.
-        </p>
-        <a class="btn" href="https://amzn.eu/d/01ST1DQa" target="_blank">Continua la serie</a>
-    </div>
-
-    <blockquote>
-        “There’s a new sheriff in town…” – Payne Harrison
-    </blockquote>
-
-</div>
-
-<footer>
-    <p>© 2026 - D. Bonomettiauthor</p>
-</footer>
-
-</body>
-</html>
-"""
-
 @app.route("/")
 def home():
-    return render_template_string(html)
+    return """
+    <html>
+    <head>
+        <title>Danilo Bonommetti - Thriller Author</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: #000;
+                color: white;
+            }
+
+            .hero {
+                height: 100vh;
+                background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+                url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 3em;
+                max-width: 800px;
+            }
+
+            .section {
+                padding: 60px 20px;
+                text-align: center;
+                background: #111;
+            }
+
+            .books {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 40px;
+                margin-top: 40px;
+            }
+
+            .book {
+                max-width: 300px;
+            }
+
+            .book img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            .btn {
+                display: inline-block;
+                margin-top: 15px;
+                padding: 12px 20px;
+                background: red;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+
+            .btn:hover {
+                background: darkred;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="hero">
+            <h1>Thriller ad alta tensione tra montagne, pericolo e sopravvivenza</h1>
+        </div>
+
+        <div class="section">
+            <h1>I miei thriller</h1>
+
+            <div class="books">
+
+                <div class="book">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/71KilybDOoL._AC_UL600_SR600,600_.jpg">
+                    <h2>Quota 3000 – Scontro fra le rocce</h2>
+                    <p>Un thriller ad alta tensione tra le montagne, dove ogni passo può essere l’ultimo.</p>
+                    <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn">Acquista su Amazon</a>
+                </div>
+
+                <div class="book">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/71jQ8RkY5lL._AC_UL600_SR600,600_.jpg">
+                    <h2>L’ombra del predatore</h2>
+                    <p>Il sequel ancora più oscuro, dove il pericolo non si vede… ma è sempre presente.</p>
+                    <a href="https://amzn.eu/d/01ST1DQa" target="_blank" class="btn">Acquista su Amazon</a>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+    </html>
+    """
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5050)
