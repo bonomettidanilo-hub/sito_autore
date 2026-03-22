@@ -7,7 +7,7 @@ def home():
     return """
     <html>
     <head>
-        <title>Danilo Bonommetti - Thriller</title>
+        <title>Danilo Bonometti - Thriller</title>
         <style>
             body {
                 margin: 0;
@@ -92,7 +92,7 @@ def home():
     <body>
 
         <div class="hero">
-            <div class="author-name">Danilo Bonommetti</div>
+            <div class="author-name">Danilo BONOMETTI</div>
 
             <h1>
             Un uomo. Una montagna. Una missione che non doveva esistere.<br><br>
@@ -105,17 +105,17 @@ def home():
 
             <div class="books">
 
-                <!-- QUOTA 3000 -->
+                <!-- QUOTA 3000 (CORRETTO) -->
                 <div class="book">
-                    <img src="https://i.imgur.com/C8pXDwC.jpeg?v=2">
+                    <img src="https://i.imgur.com/C8pXDwC.jpeg?v=3">
                     <h2>Quota 3000 – Scontro fra le rocce</h2>
                     <p>Un thriller ad alta tensione tra le montagne, dove ogni passo può essere l’ultimo.</p>
                     <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn">Acquista su Amazon</a>
                 </div>
 
-                <!-- L’OMBRA DEL PREDATORE -->
+                <!-- L’OMBRA DEL PREDATORE (CORRETTO) -->
                 <div class="book">
-                    <img src="https://i.imgur.com/LLk2xv1.jpeg?v=2">
+                    <img src="https://i.imgur.com/LLk2xv1.jpeg?v=3">
                     <h2>L’ombra del predatore</h2>
                     <p>Il sequel ancora più oscuro, dove il pericolo non si vede… ma è sempre presente.</p>
                     <a href="https://amzn.eu/d/01ST1DQa" target="_blank" class="btn">Acquista su Amazon</a>
@@ -125,10 +125,10 @@ def home():
         </div>
 
         <div class="section">
-            <h1>Chi è Danilo Bonommetti</h1>
+            <h1>Chi è Danilo Bonometti</h1>
             <div class="bio">
                 <p>
-                Danilo Bonommetti è autore di thriller ad alta tensione, ambientati tra montagne ostili, missioni segrete e situazioni estreme.
+                Danilo Bonometti è autore di thriller ad alta tensione, ambientati tra montagne ostili, missioni segrete e situazioni estreme.
                 Nei suoi romanzi, la sopravvivenza non è mai garantita e ogni scelta può essere fatale.
                 </p>
 
