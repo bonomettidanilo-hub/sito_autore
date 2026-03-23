@@ -116,14 +116,19 @@ def home():
 
     <body onload="setLanguage('it')">
 
+        <!-- BOTTONI LINGUA -->
         <div class="lang-switch">
             <button onclick="setLanguage('it')">🇮🇹 IT</button>
             <button onclick="setLanguage('en')">🇬🇧 EN</button>
         </div>
 
+        <!-- HERO -->
         <div class="hero">
             <h2>Danilo Bonometti</h2>
-            <h1>Thriller ad alta tensione tra montagne e missioni estreme</h1>
+
+            <!-- HEADLINE -->
+            <h1 class="it">Thriller ad alta tensione tra montagne e missioni estreme</h1>
+            <h1 class="en">High-intensity thrillers set in mountains and extreme missions</h1>
 
             <!-- RECENSIONI -->
             <div class="reviews-hero it">
@@ -161,7 +166,7 @@ def home():
             <div class="books">
 
                 <div class="book">
-                    <img src="https://i.imgur.com/LLk2xv1.jpeg?v=20">
+                    <img src="https://i.imgur.com/LLk2xv1.jpeg?v=21">
                     <h3>Quota 3000 – Scontro tra le rocce</h3>
                     <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn">
                         Acquista su Amazon
@@ -169,7 +174,7 @@ def home():
                 </div>
 
                 <div class="book">
-                    <img src="https://i.imgur.com/C8pXDwC.jpeg?v=20">
+                    <img src="https://i.imgur.com/C8pXDwC.jpeg?v=21">
                     <h3>L’ombra del predatore</h3>
                     <a href="https://amzn.eu/d/01ST1DQa" target="_blank" class="btn">
                         Acquista su Amazon
