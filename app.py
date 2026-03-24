@@ -1,5 +1,4 @@
 from flask import Flask
-
 app = Flask(__name__)
 
 @app.route("/")
@@ -65,8 +64,23 @@ def home():
                 color:#ccc;
             }
 
-            .section {
+            .videos {
+                margin-top:40px;
+            }
+
+            .bio {
                 margin-top:60px;
+                max-width:800px;
+                margin-left:auto;
+                margin-right:auto;
+                line-height:1.6;
+                padding:20px;
+            }
+
+            .bio img {
+                width:180px;
+                border-radius:100px;
+                margin-bottom:20px;
             }
 
             .books {
@@ -91,10 +105,6 @@ def home():
                 text-decoration:none;
                 border-radius:5px;
                 font-weight:bold;
-            }
-
-            .videos {
-                margin-top:40px;
             }
 
             .it { display:block; }
@@ -130,13 +140,6 @@ def home():
 
             <h2>Danilo Bonometti</h2>
 
-            <div class="it" style="color:gold; margin-top:10px;">
-                Oltre 500 copie vendute
-            </div>
-            <div class="en" style="color:gold; margin-top:10px;">
-                Over 500 copies sold
-            </div>
-
             <h1 class="it">
                 Missioni impossibili. Montagne ostili. Sopravvivere non è garantito.
             </h1>
@@ -148,36 +151,20 @@ def home():
             <div class="reviews-hero it">
                 “Storia ben costruita e ambientazione molto realistica.”<br>
                 “Azione continua e coinvolgente fino alla fine.”
-
                 <div class="highlight-review">
                 “C'è un nuovo sceriffo nel thriller militare: Danilo Bonometti.”
                 </div>
-
-                <div class="author">
-                — Payne Harrison, autore bestseller del New York Times
-                </div>
+                <div class="author">— Payne Harrison</div>
             </div>
 
             <div class="reviews-hero en">
                 “Well-structured story with strong realism.”<br>
                 “Engaging action from start to finish.”
-
                 <div class="highlight-review">
-                “There’s a new sheriff in town in military thrillers: Danilo Bonometti.”
+                “There’s a new sheriff in town in military thrillers.”
                 </div>
-
-                <div class="author">
-                — Payne Harrison, New York Times bestselling author
-                </div>
+                <div class="author">— Payne Harrison</div>
             </div>
-
-            <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn it">
-                Inizia a leggere ora
-            </a>
-
-            <a href="https://a.co/d/02W4gjlu" target="_blank" class="btn en">
-                Start reading now
-            </a>
 
         </div>
 
@@ -186,64 +173,70 @@ def home():
             <h2 class="it">Guarda l’azione</h2>
             <h2 class="en">Watch the action</h2>
 
-            <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-top:20px;">
-
-                <iframe width="350" height="200"
-                src="https://www.youtube.com/embed/WuZVreNsIP4"
-                frameborder="0" allowfullscreen></iframe>
-
-                <iframe width="350" height="200"
-                src="https://www.youtube.com/embed/F44s3FMVpAs"
-                frameborder="0" allowfullscreen></iframe>
-
-            </div>
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/WuZVreNsIP4"></iframe>
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/F44s3FMVpAs"></iframe>
         </div>
 
-        <!-- ITALIANO -->
-        <div class="section it">
+        <!-- BIO -->
+        <div class="bio">
+
+            <img src="https://i.imgur.com/fE0M4Is.jpeg">
+
+            <h2 class="it">L'autore</h2>
+            <h2 class="en">About the author</h2>
+
+            <p class="it">
+            Danilo Bonometti è autore di thriller militari appartenenti alla collana Action Tricolore,
+            ambientati tra montagne estreme e operazioni speciali. I protagonisti sono operatori italiani
+            altamente addestrati, impegnati in missioni ad alto rischio.
+            Le sue storie puntano su realismo, tensione e immersione totale.
+            </p>
+
+            <p class="en">
+            Danilo Bonometti writes military thrillers within the Action Tricolore series,
+            featuring elite Italian operators in extreme mountain missions.
+            His stories focus on realism, tension and immersive high-risk scenarios.
+            </p>
+
+        </div>
+
+        <!-- LIBRI IT -->
+        <div class="it">
             <h2>I miei thriller</h2>
 
             <div class="books">
 
                 <div class="book">
-                    <img src="https://i.imgur.com/LLk2xv1.jpeg?v=23">
+                    <img src="https://i.imgur.com/LLk2xv1.jpeg">
                     <h3>Quota 3000 – Scontro tra le rocce</h3>
-                    <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn">
-                        Acquista su Amazon
-                    </a>
+                    <a href="https://amzn.eu/d/0dI3x2wD" class="btn">Acquista</a>
                 </div>
 
                 <div class="book">
-                    <img src="https://i.imgur.com/C8pXDwC.jpeg?v=23">
+                    <img src="https://i.imgur.com/C8pXDwC.jpeg">
                     <h3>L’ombra del predatore</h3>
-                    <a href="https://amzn.eu/d/01ST1DQa" target="_blank" class="btn">
-                        Acquista su Amazon
-                    </a>
+                    <a href="https://amzn.eu/d/01ST1DQa" class="btn">Acquista</a>
                 </div>
 
             </div>
         </div>
 
-        <!-- INGLESE -->
-        <div class="section en">
+        <!-- LIBRI EN -->
+        <div class="en">
             <h2>My thrillers</h2>
 
             <div class="books">
 
                 <div class="book">
                     <img src="https://i.imgur.com/diVeXge.jpeg">
-                    <h3>Altitude 10,000FT: Rock Siege</h3>
-                    <a href="https://a.co/d/02W4gjlu" target="_blank" class="btn">
-                        Buy on Amazon.com
-                    </a>
+                    <h3>Altitude 10,000FT</h3>
+                    <a href="https://a.co/d/02W4gjlu" class="btn">Buy</a>
                 </div>
 
                 <div class="book">
                     <img src="https://i.imgur.com/7OCBSFm.jpeg">
                     <h3>The Shadow of the Predator</h3>
-                    <a href="https://a.co/d/052qjtIE" target="_blank" class="btn">
-                        Buy on Amazon.com
-                    </a>
+                    <a href="https://a.co/d/052qjtIE" class="btn">Buy</a>
                 </div>
 
             </div>
