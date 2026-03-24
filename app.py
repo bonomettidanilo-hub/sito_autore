@@ -93,6 +93,10 @@ def home():
                 font-weight:bold;
             }
 
+            .videos {
+                margin-top:40px;
+            }
+
             .it { display:block; }
             .en { display:none; }
 
@@ -117,18 +121,15 @@ def home():
 
     <body onload="setLanguage('it')">
 
-        <!-- SWITCH LINGUA -->
         <div class="lang-switch">
             <button onclick="setLanguage('it')">🇮🇹 IT</button>
             <button onclick="setLanguage('en')">🇬🇧 EN</button>
         </div>
 
-        <!-- HERO -->
         <div class="hero">
 
             <h2>Danilo Bonometti</h2>
 
-            <!-- PROVA SOCIALE -->
             <div class="it" style="color:gold; margin-top:10px;">
                 Oltre 500 copie vendute
             </div>
@@ -136,7 +137,6 @@ def home():
                 Over 500 copies sold
             </div>
 
-            <!-- HEADLINE -->
             <h1 class="it">
                 Missioni impossibili. Montagne ostili. Sopravvivere non è garantito.
             </h1>
@@ -145,7 +145,6 @@ def home():
                 Impossible missions. Hostile mountains. Survival is not guaranteed.
             </h1>
 
-            <!-- RECENSIONI -->
             <div class="reviews-hero it">
                 “Storia ben costruita e ambientazione molto realistica.”<br>
                 “Azione continua e coinvolgente fino alla fine.”
@@ -172,7 +171,6 @@ def home():
                 </div>
             </div>
 
-            <!-- CTA IMMEDIATA -->
             <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn it">
                 Inizia a leggere ora
             </a>
@@ -183,6 +181,24 @@ def home():
 
         </div>
 
+        <!-- VIDEO -->
+        <div class="videos">
+            <h2 class="it">Guarda l’azione</h2>
+            <h2 class="en">Watch the action</h2>
+
+            <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap; margin-top:20px;">
+
+                <iframe width="350" height="200"
+                src="https://www.youtube.com/embed/WuZVreNsIP4"
+                frameborder="0" allowfullscreen></iframe>
+
+                <iframe width="350" height="200"
+                src="https://www.youtube.com/embed/F44s3FMVpAs"
+                frameborder="0" allowfullscreen></iframe>
+
+            </div>
+        </div>
+
         <!-- ITALIANO -->
         <div class="section it">
             <h2>I miei thriller</h2>
@@ -190,7 +206,7 @@ def home():
             <div class="books">
 
                 <div class="book">
-                    <img src="https://i.imgur.com/LLk2xv1.jpeg?v=22">
+                    <img src="https://i.imgur.com/LLk2xv1.jpeg?v=23">
                     <h3>Quota 3000 – Scontro tra le rocce</h3>
                     <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn">
                         Acquista su Amazon
@@ -198,7 +214,7 @@ def home():
                 </div>
 
                 <div class="book">
-                    <img src="https://i.imgur.com/C8pXDwC.jpeg?v=22">
+                    <img src="https://i.imgur.com/C8pXDwC.jpeg?v=23">
                     <h3>L’ombra del predatore</h3>
                     <a href="https://amzn.eu/d/01ST1DQa" target="_blank" class="btn">
                         Acquista su Amazon
