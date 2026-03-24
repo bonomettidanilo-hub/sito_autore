@@ -84,12 +84,13 @@ def home():
 
             .btn {
                 display:inline-block;
-                margin-top:10px;
-                padding:10px 20px;
+                margin-top:15px;
+                padding:12px 25px;
                 background:red;
                 color:white;
                 text-decoration:none;
                 border-radius:5px;
+                font-weight:bold;
             }
 
             .it { display:block; }
@@ -116,7 +117,7 @@ def home():
 
     <body onload="setLanguage('it')">
 
-        <!-- BOTTONI LINGUA -->
+        <!-- SWITCH LINGUA -->
         <div class="lang-switch">
             <button onclick="setLanguage('it')">🇮🇹 IT</button>
             <button onclick="setLanguage('en')">🇬🇧 EN</button>
@@ -124,11 +125,25 @@ def home():
 
         <!-- HERO -->
         <div class="hero">
+
             <h2>Danilo Bonometti</h2>
 
+            <!-- PROVA SOCIALE -->
+            <div class="it" style="color:gold; margin-top:10px;">
+                Oltre 500 copie vendute
+            </div>
+            <div class="en" style="color:gold; margin-top:10px;">
+                Over 500 copies sold
+            </div>
+
             <!-- HEADLINE -->
-            <h1 class="it">Thriller ad alta tensione tra montagne e missioni estreme</h1>
-            <h1 class="en">High-intensity thrillers set in mountains and extreme missions</h1>
+            <h1 class="it">
+                Missioni impossibili. Montagne ostili. Sopravvivere non è garantito.
+            </h1>
+
+            <h1 class="en">
+                Impossible missions. Hostile mountains. Survival is not guaranteed.
+            </h1>
 
             <!-- RECENSIONI -->
             <div class="reviews-hero it">
@@ -157,6 +172,15 @@ def home():
                 </div>
             </div>
 
+            <!-- CTA IMMEDIATA -->
+            <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn it">
+                Inizia a leggere ora
+            </a>
+
+            <a href="https://a.co/d/02W4gjlu" target="_blank" class="btn en">
+                Start reading now
+            </a>
+
         </div>
 
         <!-- ITALIANO -->
@@ -166,7 +190,7 @@ def home():
             <div class="books">
 
                 <div class="book">
-                    <img src="https://i.imgur.com/LLk2xv1.jpeg?v=21">
+                    <img src="https://i.imgur.com/LLk2xv1.jpeg?v=22">
                     <h3>Quota 3000 – Scontro tra le rocce</h3>
                     <a href="https://amzn.eu/d/0dI3x2wD" target="_blank" class="btn">
                         Acquista su Amazon
@@ -174,7 +198,7 @@ def home():
                 </div>
 
                 <div class="book">
-                    <img src="https://i.imgur.com/C8pXDwC.jpeg?v=21">
+                    <img src="https://i.imgur.com/C8pXDwC.jpeg?v=22">
                     <h3>L’ombra del predatore</h3>
                     <a href="https://amzn.eu/d/01ST1DQa" target="_blank" class="btn">
                         Acquista su Amazon
